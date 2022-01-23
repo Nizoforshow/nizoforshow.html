@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nizo creative studio</title>
+    <style>
+      
+      body {
+        background: url(Bul.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      div {
+       
+      }
+      .login {
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        background: transparent;
+        outline: none;
+        color: #fff;
+        width: 80%;
+        margin: 0px 30px;
+        height: 25px;
+      }
+      .signup {
+        font-size: 50px;
+        margin: 0px 30px;
+        color: #fff;
+      }
+      .log {
+        background: transparent;
+        width: 250px;
+        height: 50px;
+        border-radius: 25px;
+        border: 2px solid #fff;
+        position: center;
+        margin: 0px 50px;
+        color: #fff;
+      }
+      }
+      .agree {
+        color: darkgrey;
+        font-size: 13px;
+        margin: 0px 20px 5px;
+        font-family: inherit;
+      }
+      </style>
+</head>
+
+<body>
+  <br><br><br><br>
+<div>
+  <p class="signup"><b>Sign up</p>
+  <br><br><br>
+  <form>
+    <input class="login" type="input-field" placeholder="Email addres" required="email">
+    <br><br><br><br>
+    <input class="login" type="input-field" placeholder="User name" required>
+    <br><br><br><br>
+    <input class="login" type="input-field" placeholder="Password" required>
+    <br><br><br><br>
+    <input class="log" type="submit" value="sign up" onclick="loginAlert()">
+    
+  </form>
+</div>
+<script>
+	function loginAlert()	{
+	  if (confirm('you need to agree terms & conditions')){
+	    alert ('thanks! you already have account')
+	  }
+	  else {
+	    alert('your login is cancelled')
+	  }
+	}
+ </script>
+</body>
+
+</html>
